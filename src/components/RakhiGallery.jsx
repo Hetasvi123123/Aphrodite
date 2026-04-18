@@ -12,7 +12,7 @@ const RakhiGallery = () => {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section className="p-10 bg-white text-center">
+    <section id="RakhiGallery" className="p-10 bg-white text-center">
 
       {/* Title */}
       <motion.h2

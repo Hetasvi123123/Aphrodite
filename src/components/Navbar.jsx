@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+
 const Navbar = () => {
+
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -34,13 +36,13 @@ const Navbar = () => {
                 {/* Button */}
                 <button
                     onClick={() => {
-                        document.getElementById("About")?.scrollIntoView({
+                        document.getElementById("RakhiGallery")?.scrollIntoView({
                             behavior: "smooth",
                         });
                     }}
                     className="text-white text-sm tracking-wider uppercase border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition"
                 >
-                    About
+                    Rakhi
                 </button>
             </div>
         </motion.nav>

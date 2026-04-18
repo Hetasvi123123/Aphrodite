@@ -1,15 +1,10 @@
 import React, { useState } from "react";
-import Hero from "./components/Hero";
 import Loader from "./components/Loader";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import History from "./components/History";
-import Celebration from "./components/Celebration";
-import Gifts from "./components/Gifts";
-import Footer from "./components/Footer";
+
 import RakhiGallery from "./components/RakhiGallery";
-import RakhiCategory from "./components/RakhiCategory";
-import ContactOrder from "./components/ContactOrder";
+
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -20,16 +15,10 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
-      <Hero />
-      <About />
-      <History />
-      <RakhiCategory />
-      <RakhiGallery />
-      <Celebration />
-      <Gifts />
-      <ContactOrder />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      
     </>
   );
 };

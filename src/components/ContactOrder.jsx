@@ -23,89 +23,93 @@ const ContactOrder = () => {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
 
           {/* Instagram */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="bg-white p-6 rounded-2xl shadow-lg"
+          <a
+            href="https://www.instagram.com/aphrodite.in3?utm_source=qr&igsh=MWgyeHQxaTU5aGhrOA=="
+            target="_blank"
           >
-            <div className="flex justify-center text-center text-[30px]">
-
-              <FaInstagram className="text-pink-500 hover:scale-125 transition" />
-            </div>
-            <a
-              href="https://www.instagram.com/aphrodite.in3?utm_source=qr&igsh=MWgyeHQxaTU5aGhrOA=="
-              target="_blank"
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="bg-white p-6 rounded-2xl shadow-lg"
             >
+              <div className="flex justify-center text-center text-[30px]">
+
+                <FaInstagram className="text-pink-500 hover:scale-125 transition" />
+              </div>
+
 
               <h3 className="mt-4 text-xl font-bold text-[#6E1A37]">
                 Instagram
               </h3>
 
 
-            </a>
 
-          </motion.div>
+            </motion.div>
+          </a>
 
           {/* Facebook */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="bg-white p-6 rounded-2xl shadow-lg"
+          <a
+            href="https://www.facebook.com/share/1Cat7LdGZ3/"
+            target="_blank"
           >
-            <div className="flex justify-center text-center text-[30px]">
-
-              <FaFacebook className="text-blue-600 hover:scale-125 transition" />
-            </div>
-            <a
-              href="https://www.facebook.com/share/1Cat7LdGZ3/"
-              target="_blank"
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="bg-white p-6 rounded-2xl shadow-lg"
             >
+              <div className="flex justify-center text-center text-[30px]">
+
+                <FaFacebook className="text-blue-600 hover:scale-125 transition" />
+              </div>
+
 
               <h3 className="mt-4 text-xl font-bold text-[#6E1A37]">
                 Facebook
               </h3>
-            </a>
-          </motion.div>
+            </motion.div>
+          </a>
 
 
           {/* youtube */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="bg-white p-6 rounded-2xl shadow-lg"
+          <a
+            href="https://www.youtube.com/@Aphrodite.in3"
+            target="_blank"
           >
-            <div className="flex justify-center text-center text-[30px]">
-              <FaYoutube className="text-red-500 hover:scale-125 transition" />
 
-            </div>
-            <a
-              href="https://www.youtube.com/@Aphrodite.in3"
-              target="_blank"
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="bg-white p-6 rounded-2xl shadow-lg"
             >
+              <div className="flex justify-center text-center text-[30px]">
+                <FaYoutube className="text-red-500 hover:scale-125 transition" />
+
+              </div>
 
               <h3 className="mt-4 text-xl font-bold text-[#6E1A37]">
                 YouTube
               </h3>
-            </a>
-          </motion.div>
+            </motion.div>
+          </a>
 
           {/* google */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="bg-white p-6 rounded-2xl shadow-lg"
+          <a
+            href="https://g.co/kgs/vk3TQAh"
+            target="_blank"
           >
-            <div className="flex justify-center text-center text-[30px]">
-
-              <FaGoogle className="text-yellow-500 hover:scale-125 transition" />
-            </div>
-            <a
-              href="https://g.co/kgs/vk3TQAh"
-              target="_blank"
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="bg-white p-6 rounded-2xl shadow-lg"
             >
+              <div className="flex justify-center text-center text-[30px]">
+
+                <FaGoogle className="text-yellow-500 hover:scale-125 transition" />
+              </div>
+
 
               <h3 className="mt-4 text-xl font-bold text-[#6E1A37]">
                 Google
               </h3>
-             
-            </a>
-          </motion.div>
+
+            </motion.div>
+          </a>
 
 
         </div>
