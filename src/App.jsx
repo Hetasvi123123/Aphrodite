@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import Loader from "./components/Loader";
-
-import RakhiGallery from "./components/RakhiGallery";
-
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 

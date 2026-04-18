@@ -34,22 +34,32 @@ const RevealCard = ({ title, img, reverse }) => {
         <motion.div
             ref={ref}
             style={{ clipPath }}
-            className={`flex flex-col md:flex-row bg-[#6E1A37] p-30 items-center gap-8 overflow-hidden ${reverse ? "md:flex-row-reverse" : ""
-                }`}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className={`
+        flex flex-col md:flex-row 
+        bg-[#6E1A37] 
+        p-6 sm:p-8 md:p-10
+        items-center gap-6 sm:gap-8
+        rounded-xl overflow-hidden
+        ${reverse ? "md:flex-row-reverse" : ""}
+      `}
         >
             {/* Image */}
-            <div className="w-full md:w-1/2 bg-secondary p-6 rounded-2xl shadow-lg">
+            <div className="w-full md:w-1/2 bg-secondary p-4 sm:p-6 rounded-2xl shadow-lg">
                 <img
                     src={img}
                     alt={title}
-                    className="w-full h-64 object-contain"
+                    loading="lazy"
+                    className="w-full h-40 sm:h-52 md:h-64 object-contain"
                 />
             </div>
 
             {/* Text */}
             <div className="w-full md:w-1/2 text-center md:text-left">
                 <h3
-                    className="text-2xl font-extrabold text-[#72BAA9]"
+                    className="text-lg sm:text-xl md:text-2xl font-extrabold text-[#72BAA9]"
                     style={{
                         fontFamily: "'Cinzel', serif",
                         letterSpacing: "2px"
@@ -58,7 +68,7 @@ const RevealCard = ({ title, img, reverse }) => {
                     {title}
                 </h3>
 
-                <p className="mt-4 text-[#D5E7B5]">
+                <p className="mt-3 text-sm sm:text-base text-[#D5E7B5]">
                     Explore beautiful and unique Rakhi designs crafted specially for this category.
                 </p>
             </div>

@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const History = () => {
   return (
-    <section className="p-10 bg-pink-50 text-center">
+    <section id="History" className="p-10 bg-pink-50 text-center">
 
-      <motion.h2 
+      <motion.h2
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         className="text-3xl font-bold text-[#5E0006]"
@@ -23,12 +23,12 @@ const History = () => {
         </p>
 
         <p>
-          One famous story is of Draupadi and Lord Krishna, where Draupadi 
+          One famous story is of Draupadi and Lord Krishna, where Draupadi
           tied a piece of cloth on Krishna’s wrist, and he promised to protect her.
         </p>
 
         <p>
-          Another story tells how Rani Karnavati sent a Rakhi to Emperor Humayun, 
+          Another story tells how Rani Karnavati sent a Rakhi to Emperor Humayun,
           seeking protection, and he honored the bond.
         </p>
       </motion.div>
